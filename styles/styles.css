@@ -1,0 +1,529 @@
+/*Naranja: #F69526
+Azul : #005383
+Gris : #6E6C67
+*/
+
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+br.clear { clear: both; }
+/* CSS */
+body {
+	line-height: 1;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #6E6C67;
+}
+a
+{
+	text-decoration: none;
+}
+/*Header*/
+#header
+{
+	height: 67px;
+	width: auto;
+	background-color: #273b60;
+	color: white;
+}
+#logo
+{
+	margin-top: 20px;
+	margin-left: 15px;
+	float: left;	
+}
+#usuario
+{
+	margin-top: 20px;
+	margin-right: 20px;
+	float: right;
+}
+#usuario a
+{
+	color: white;
+	font-size: 12px;
+}
+/*NAVIGATION*/
+#nav
+{
+	width: 200px;
+	background-color: #EBEFF0;
+	float: left;
+	font-family: Novecentowide-Light; 
+}
+#nav ul
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#nav ul .submenu
+{
+	margin-top: 3px;
+}
+#nav .submenu li
+{
+	margin-bottom: 8px;
+}
+#nav li
+{
+	margin-bottom: 20px;
+}
+#nav a
+{
+	color: #f69526;
+	font-size: 22px; 
+	width: 200px;
+	display: block;
+}
+#nav a:hover
+{
+	color: #273b60;
+}
+#nav .submenu a:hover
+{
+	background-color: #dee3e9;
+}
+#nav .submenu a
+{
+	color: #6e6c67;
+	font-size: 18px;
+}
+/*Overview and Main*/
+.title, #ticketContent .clienteId, #ticketContent .ticketCliente
+{
+	border:solid 1px #c3c4c4;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #EBEFF0;
+    height: 50px;
+}
+.content
+{
+	border: 1px solid #c3c4c4;
+	margin-top: -15px;
+	background-color: white;
+}
+#overview
+{
+ 	width: 400px;
+ 	float: left;
+}
+
+#overview .title p
+{
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #005383;
+	float: left;
+}
+#overview .title img
+{
+	float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#overview .title input
+{
+	margin-top: 7px;
+	margin-left: 26px;
+}
+
+/*Ticket Overview*/
+.ticket
+{
+	border-bottom: 1px solid #c3c4c4;
+	height: 45px;
+	cursor: pointer;
+	padding-bottom: 15px;
+}
+
+.ticket .nombre 
+{
+	color: #005383;
+	float: left;
+	padding-left: 15px;
+}
+.ticket .status
+{
+	float: right;
+	padding-right: 15px;
+	font-size: 14px;
+	
+}
+.ticket .asunto
+{
+	float: left;
+	padding-left: 15px;
+	font-size: 13px;
+}
+.ticket .fecha
+{
+	float: right;
+	color: #F69526;
+	font-size: 13px;
+	padding-right: 15px;
+}
+.ticket:hover
+{
+	background-color: #dee3e9;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+
+/*Ticket Content*/
+#ticketContent
+{
+	text-align: left;
+	padding: 20px;
+}
+#ticketContent .cliente, #ticketContent .empresa
+{
+	font-size: 20px;
+	color: #005383;
+	font-weight: 400;
+	/*border-bottom: 1px solid #c3c4c4;*/
+}
+#ticketContent .contrato, #ticketContent .sucursales, #ticketContent #empresa, #ticketContent .mantenimientos
+{
+	font-size: 13px;
+	padding: 15px;
+	background-color: #e1e4e9;
+	-moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius: 15px;
+	margin-bottom: 12px;
+	margin-top:10px;
+	
+}
+#ticketContent .asunto, #ticketContent .RFC, #ticketContent .contratoCode
+{
+	color: #F69526; 
+	margin-bottom: 5px;
+}
+.historial, #ticketContent .sucursales, #ticketContent .odas, #ticketContent .contratos
+{
+	margin-top: 20px;
+	-moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius: 15px;
+    background-color: #dee3e9;
+    padding: 10px;
+}
+.historial img, #ticketContent .descContrato img
+{
+	float: left;
+	padding-right: 14px;
+}
+.historial .fecha{
+	float: right;
+}
+.historial p
+{
+	display: block;
+	/*float: left;*/
+}
+.historial .fecha
+{
+	font-size: 13px;
+	color: #F69526;
+}
+.historial .empleado
+{
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+#main .title img
+{
+	float: right;
+	margin-right:10px; 
+	cursor: pointer;
+}
+#main .title
+{
+	color: #005383;
+	text-align: left;
+	padding-left: 10px;
+}
+#main .title p
+{
+	padding-top: 10px;
+}
+#main
+{
+	overflow: hidden;
+	width: auto;
+}
+
+/*overview (Clientes / Empresas)*/
+.overview li
+{
+	border-bottom: 1px solid #c3c4c4;
+	cursor: pointer;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+}
+.overview li:hover
+{
+	background-color: #dee3e9;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+
+
+
+/*Agregar.php*/
+.content
+{
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-align: left;
+}
+.content input[type="text"], textarea
+{
+    border: 1px solid #A4A2A2;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8);
+	padding: 6px;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.content select
+{
+	font-size: 15px;
+}
+.content table.agTicket
+{
+	width: 440px;
+	margin: 10px auto;
+}
+.content table.agTicket td
+{
+	height: 27px;
+}
+.title #atenderTicket
+{
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+}
+
+/*Styles Login*/
+#login input[type="text"], input[type="password"] 
+{
+	border: 1px solid #A4A2A2;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8);
+	padding: 6px;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;	
+}
+#login table
+{
+	margin: 10px auto;
+	text-align: center;
+}
+.warning
+{
+	font-size: 12px;
+	color: #f69526;
+	display: none;
+	text-align: center;
+}
+.trash
+{
+	margin-top: 4px;
+}
+.editar
+{
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+}
+
+/*Styles EMPRESA*/
+#ticketContent .sucursales{
+	margin-top: 20px;
+	font-size: 15px;
+}
+#ticketContent .sucTitle{
+	color: #005383;
+	font-weight: 400;
+}
+#ticketContent .clienteId div{
+	padding: 10px;
+}
+#ticketContent .sucursales .direccion{
+	color:  #f69526;
+}
+#ticketContent li.clienteId{
+	height: auto;
+	margin-top: 10px;
+}
+#ticketContent li.clienteId:hover{
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	background-color: white;
+	
+}
+#ticketContent .clienteId .cliente{
+	margin: 0;
+	font-size: 15px;
+	padding: 0;
+	float: left;
+	font-weight: 300;
+}
+#ticketContent .clienteId .email{
+	float: right;
+}
+
+#ticketContent .controls{
+	float: right;
+}
+
+#ticketContent .data{
+	float: left;
+}
+#ticketContent .sucursales .controls .editThis, .editThisMant{
+	margin-top: -5px;
+}
+
+/*Styles CLIENTES*/
+#ticketContent #empresa:hover{
+	cursor: pointer;
+	/*
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	background-color: white;*/
+}
+#ticketContent #empresa .empresa{
+	font-size: 16px;
+}
+#ticketContent .ticketCliente{
+	padding: 10px;
+	margin-top: 9px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	height: auto;
+}
+#ticketContent .ticketCliente:hover{
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	background-color: white;
+}
+#ticketContent .ticketCliente .fecha{
+	float: right;
+	
+}
+#ticketContent .ticketCliente .asunto{
+	float: left;
+}
+.desactivado
+{
+	background-color: #f2ede8;
+}
+
+/*STYLES CONFIGURACION CONTRATOS*/
+#ticketContent .odas{
+	/*color: #005383;*/
+}
+#ticketContent .odas .fechaInicio, #ticketContent .odas .fechaVenc
+{
+	color: #F69526;
+	float: right;
+	font-size: 13px;
+}
+#histContratos{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#agregarOdaIcon{
+	float: right;
+}
+#ticketContent .odas .sla
+{
+	color: #F69526;
+}
+#ticketContent .odas .descSla{
+	font-size: 13px;
+	font-style: italic;	
+}
+#ticketContent .deleteThis:hover, .deleteThisMant:hover{
+	cursor: pointer;
+}
+#cancelarContrato, #regresarContratoActual
+{
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#ticketContent .contratos:hover
+{
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	background-color: #EBEFF0;
+}
+/*MANTENIMIENTOS*/
+#ticketContent .mantenimientos
+{
+	font-size: 15px;
+}
+
+
